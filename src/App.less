@@ -1,0 +1,51 @@
+@simple-line-font-path: "~simple-line-icons/fonts/";
+@import "~simple-line-icons/less/simple-line-icons";
+@import "~antd/lib/time-picker/style/index.less";
+@import "~antd/lib/date-picker/style/index.less";
+@import "~antd/lib/input/style/index.less";
+@import (reference) "./shared/variables.less";
+
+.App {
+  color: @gray;
+}
+.title {
+  margin: 0 0 40px 0;
+}
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  background-color: @green;
+  padding: 13px 28px 19px 28px;
+  font-size: 18px;
+  line-height: 1;
+  color: white;
+}
+.ant-calendar-picker-icon:after {
+  content: "\e604";
+  font-size: 10px;
+  color: #596a72;
+  display: inline-block;
+  line-height: 1;
+  font-family: 'simple-line-icons';
+ }
+ .ant-calendar-picker:hover .ant-calendar-picker-clear {
+   opacity: 0;
+ }
+ .ant-time-picker-icon:after {
+  content: "\e604";
+  font-size: 10px;
+  color: #596a72;
+  display: block;
+  line-height: 1;
+  font-family: 'simple-line-icons';
+}
+.ant-time-picker-panel-clear-btn:after {
+  font-size: 12px;
+  color: #596a72;
+  font-family: 'simple-line-icons';
+  line-height: 1;
+  width: 20px;
+  content: "\e082";
+}
+
+

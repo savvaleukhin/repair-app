@@ -1,0 +1,33 @@
+@import (reference) '../../../../shared/variables.less';
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-top: 1px solid @lightgray;
+  &:last-child {
+    border-bottom: 1px solid @lightgray;
+  }
+}
+.title {
+  max-width: 300px;
+  a {
+    color: @success;
+    text-decoration: none;
+    &:hover {
+      color: @danger;
+    }
+  }
+}
+.data {
+  display: flex;
+}
+.price {
+  padding-right: 30px;
+}
+.action {
+  padding-right: 9px;
+  i {
+    cursor: pointer;
+  }
+}

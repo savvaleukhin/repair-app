@@ -1,0 +1,20 @@
+@import (reference) '../../shared/variables.less';
+
+.categories {
+  margin-top: 25px;
+  a {
+    color: @success;
+    text-decoration: none;
+    &:hover {
+      color: @danger;
+    }
+  }
+}
+.category {
+  padding: 20px 0;
+  border-top: 1px solid @lightgray;
+  height: 25px;
+  &:last-child {
+    border-bottom: 1px solid @lightgray;
+  }
+}

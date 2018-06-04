@@ -1,0 +1,24 @@
+@import (reference) '../../shared/variables.less';
+
+.linkCase {
+  padding-top: 20px;
+  a {
+    color: @success;
+    text-decoration: none;
+  }
+}
+.buttonCase {
+  padding-top: 40px;
+  a[disabled] {
+    pointer-events: none;
+    border: 1px solid #999;
+    background-color: #ccc;
+    color: #666;
+  }
+}
+.totalPrice {
+  padding-top: 40px;
+  font-size: 36px;
+  line-height: 1.25;
+  text-align: center;
+}

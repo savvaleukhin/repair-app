@@ -1,0 +1,73 @@
+@import (reference) '../../../shared/variables.less';
+
+.btnMixin() {
+  display: inline-block;
+  box-sizing: border-box;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+}
+.btnContentMixin() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.controlBar {
+  height: 40px;
+  background-color: rgba(94, 173, 25, 0.05);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  margin-bottom: 40px;
+}
+.totalPrice {
+  font-size: 36px;
+  line-height: 1.25;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.price {
+  padding-right: 40px;
+}
+.btns {
+  display: flex;
+  align-content: center;
+}
+.btnMinus {
+  .btnMixin();
+  border: 1px solid @danger;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  .btnContent {
+    .btnContentMixin();
+    div {
+      width: 14px;
+      height: 2px;
+      background-color: @danger;
+    }
+  }
+}
+.btnPlus {
+  .btnMixin();
+  border: 1px solid @success;
+  border-left: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  .btnContent {
+    .btnContentMixin();
+    div {
+      width: 14px;
+      height: 2px;
+      background-color: @success;
+      &:nth-child(2) {
+        position: absolute;
+        transform: rotate(90deg);
+      }
+    }
+  }
+}

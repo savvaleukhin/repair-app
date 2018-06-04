@@ -1,0 +1,27 @@
+@import (reference) '../../shared/variables.less';
+
+.menu {
+  padding: 0;
+  margin: 0 0 10px 0;
+  list-style: none;
+  font-size: 14px;
+  line-height: 1.43;
+}
+.menuItem {
+  display: inline-block;
+  position: relative;
+  padding-right: 25px;
+  &:not(:last-child):after {
+    content: '\00B7';
+    padding-left: 10px;
+    position: absolute;
+  }
+  a {
+    text-decoration: none;
+    color: @success;
+  }
+  a[disabled] {
+    pointer-events: none;
+    color: @gray;
+  }
+}

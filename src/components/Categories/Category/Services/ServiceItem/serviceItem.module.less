@@ -1,0 +1,27 @@
+@import (reference) '../../../../../shared/variables.less';
+
+.serviceItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-top: 1px solid @lightgray;
+  &:last-child {
+    border-bottom: 1px solid @lightgray;
+  }
+}
+.desc {
+  max-width: 300px;
+  a {
+    color: @success;
+    text-decoration: none;
+    &:hover {
+      color: @danger;
+    }
+  }
+}
+.teaser {
+  font-size: 14px;
+  line-height: 1.43;
+}
+
+
